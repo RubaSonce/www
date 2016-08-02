@@ -1,0 +1,148 @@
+.header{
+	width:100%;
+	background: #4d4d4d;
+
+}
+
+.TopLeft{
+	background-color: red;
+	float: left;
+	color: white;
+	max-width: 586px;
+	@media ( max-width: @screen-md-max) {
+		background-color: violet;
+		max-width: 570px;
+	}
+	@media ( max-width: @screen-sm-max) {
+		background-color: yellow;
+		max-width: 400px;
+	}
+	@media ( max-width: @screen-xs-max) {
+		max-width:	100%;
+		width:100%;
+	}
+}
+.TopRight{
+	float: left;
+	background-color: green;
+	max-width: 360px;
+	margin-left: 24px;
+	@media ( max-width: @screen-md-max) {
+		
+	}
+	@media ( max-width: @screen-sm-max) {
+		max-width: 320px;
+	}
+	@media ( max-width: @screen-xs-max) {
+		max-width:	100%;
+		width:100%;
+	}
+}
+
+
+
+.fitness{
+	margin: 20px auto;
+	float: left;
+	background-color: greenyellow;
+	span:first-child{
+		background:	red;
+		display: block;
+		font-family: "Ubuntu";
+		color: rgb(251, 251, 251);
+		line-height: 1.2;
+		font-size: 30px;
+	}
+	span:last-child{
+		background:	green;
+		display: block;
+	}
+}
+li{
+	background-color: green;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+	margin: 10px 5px 5px 5px;
+
+}
+.LeftBottomSide{
+	float: left;
+	background-color: blue;
+	float: top;
+	h1{
+		margin-top:0;
+	}
+}
+
+.Phone{
+	color: orange;
+}
+.login1{
+	padding: 20px;
+	background: #e5e5e5;
+	/*height: 300px;
+	width: 300px;*/
+	text-align: center;
+	border-radius: 15px;
+	font-size: 20px;
+	margin: 5px;
+	
+	}
+.login1 input[type="text"],
+.login1 input[type="password"] {
+	padding: 5px;
+	height: 60px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.login1 input[type="submit"] {
+	padding: 5px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	color: black;
+	background-color: #00CED1;
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	margin-bottom: 10px;
+	
+}
+
+
+/*тушкаБіла перша*/
+.BodyWhite1{
+	width:100%;
+	background: red;
+	float: left;
+}
+.Pros .Mirror{
+	text-align: center;
+	background-color: green;
+	}
+/*.IconsBig{
+	display: inline-block;
+	li{
+		height: 100px; 
+		width: 100px;
+		background-color: yellow;
+		float: left;
+		margin: 10px 5px 5px 5px;
+
+	}
+}*/
+
+.Text{
+margin-top: 10px; 
+text-align: left;
+}
+.PhotoMan{
+float: left;
+
+}

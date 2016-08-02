@@ -1,0 +1,164 @@
+﻿@headerBlockFonColor  : rgba(255,255,255,1);
+@green                : rgba(0,153,51,1);
+@fonColor1            : rgba(255,255,255,1);
+@fonColor2            : rgba(247,247,247,1);
+@fonColor3            : #ebeee8;
+@container-large-desktop: 1000px;
+
+
+// @container-desktop: 1011px;
+// // @container-tablet: 768px;
+
+.font-face (@fontname, @fontfile, @fontstyle: normal, @fontweight: normal) {
+    @font-face {
+        font-family: @fontname;
+        src: url('../fonts/@{fontfile}.eot');
+        src: url('../fonts/@{fontfile}.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/@{fontfile}.woff') format('woff'),
+             url('../fonts/@{fontfile}.ttf') format('truetype'),
+             url('../fonts/@{fontfile}.svg#@{fontname}') format('svg');
+        font-weight: @fontweight;
+        font-style: @fontstyle;
+    }
+}
+
+// .font-face(ubuntu, ubuntu-light, normal, 100);
+// .font-face(ubuntu, ubuntu-lightitalic, italic, 100);
+
+// .font-face(ubuntu, ubuntu-regular, normal, 500);
+// .font-face(ubuntu, ubuntu-italic, italic, 500);
+
+// .font-face(ubuntu, ubuntu-medium, normal, 600);
+// .font-face(ubuntu, ubuntu-mediumitalic, italic, 600);
+
+// .font-face(ubuntu, ubuntu-bold, normal, 700);
+// .font-face(ubuntu, ubuntu-bolditalic, italic, 700);
+
+
+
+/* colors variables start */
+
+/* colors variables end */
+
+
+/* bg variables start */
+// @d-gray: #222222;
+// @red: #ec1c23;
+// bg variables end
+
+
+
+@grid-columns: 12;
+@font-family-sans-serif: 'Exo 2', sans-serif, arial, tahoma;
+// @border-radius-base: 0;
+// @font-size-base: 14px;
+// @gray-base: #000000;
+// @body-bg: #ffffff;
+// @grid-gutter-width: 80px;
+// @grid-float-breakpoint: 0;
+// @container-large-desktop: 1440px;
+// @container-desktop: 1280px;
+// @container-tablet: 1024px;
+
+// @screen-lg: @container-large-desktop; 
+// @screen-md: @container-desktop;
+// @screen-sm-min: 1041px;
+// @screen-xx-max: 556px;
+
+// Typography
+// @link-color: @red;
+// @link-color-hover: @red;
+
+// @font-size-h1: 36px;
+// @font-size-h2: 30px;
+// @font-size-h3: 26px;
+// @font-size-h4: 20px;
+// @font-size-h5: 18px;
+// @headings-font-weight: 600;
+h1,.h1{
+  margin-top:  30px;
+  margin-bottom: 25px;
+  letter-spacing: 1.7px;
+}
+h2,.h2{
+  margin-top: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 1.4px;
+}
+h3, .h3{
+  letter-spacing: 1.2px;
+  margin-bottom: 17px;
+}
+h4, .h4{
+    letter-spacing: 0.9px;
+}
+h5, .h5{
+    margin-top: 22px;
+    letter-spacing: 0.9px;
+    margin-bottom: 23px;
+}
+
+
+// link
+a{
+  text-decoration: underline;
+}
+// @link-hover-decoration: none;
+// @link-color: #49CBAA;
+// @link-hover-color: @link-color;
+
+
+// modals
+// @modal-sm: 313px;
+// @modal-header-border-color: transparent;
+// @modal-footer-border-color: transparent;
+// @modal-inner-padding: 26px;
+// @modal-backdrop-bg: #000;
+// @modal-content-bg: #f5f5f5;
+// @modal-title-padding: 0;
+
+// form
+// @input-color: @gray-base;
+// @input-border: #c6c6c6;
+// @input-border-focus: (@red);
+// @input-color-placeholder: #c6c6c6;
+// @input-height-base: 35px;
+// @form-group-margin-bottom: 0;
+
+// btn
+// @btn-font-weight: bold;
+// @btn-default-color: @gray-base;
+// @btn-default-bg: #c6c6c6;
+// @btn-default-border: @btn-default-bg;
+// @btn-border-radius-large: 0;
+.after(){
+	content: '';
+	display: table;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+.transition (@transition) {
+  -webkit-transition: @transition;  
+  -moz-transition:    @transition;
+  -ms-transition:     @transition; 
+  -o-transition:      @transition;  
+}
+.after{
+	content: '';
+	display: table;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix-block{
+  display: table;
+  clear: both;
+  float: none !important;
+}
